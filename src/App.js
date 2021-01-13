@@ -1,16 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/navigation/Navigation';
+import Home from './views/home/Home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div id="outer-container">
         <Navigation></Navigation>
-        <p>
-          Hej pig!
-        </p>
-      </header>
+        <main id="page-wrap">
+          <Home></Home>
+        </main>
+      </div>
     </div>
   );
 }
