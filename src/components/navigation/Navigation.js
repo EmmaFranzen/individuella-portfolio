@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { Link } from "react-router-dom";
 import { elastic as Menu } from 'react-burger-menu';
 
 import './Navigation.css';
@@ -11,11 +12,16 @@ class Navigation extends Component {
     }
     render() { 
         return ( 
-            <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
-                <a id="home" className="menu-item" href="/">Home</a>
-                <a id="contact" className="menu-item" href="/contact">Contact</a>
-                <a id="portfolio" className="menu-item" href="/portfolio">Portfolio</a>
-                <a id="about" className="menu-item" href="/about">About</a>
+            <Menu disableAutoFocus pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
+                <Link id="home" className="menu-item" to="/">Home</Link>
+                <Link id="contact" className="menu-item" to="/contact">Contact</Link>
+                <Link id="portfolio" className="menu-item" to="/portfolio">Portfolio</Link>
+                <Link id="about" className="menu-item" to="/about">About</Link>
+                <div className="nav-contact-info">
+                    <p>Emma</p>
+                    <p>contact@emma.com</p>
+                    <p><a href="https://github.com/EmmaFranzen">Github</a></p>
+                </div>
             </Menu>
          );
     }
