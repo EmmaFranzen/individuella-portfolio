@@ -1,0 +1,16 @@
+.portfolio-item {
+    margin: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio-content {
+    width: 80%;
+    margin: auto;
+}
+
+.portfolio-img {
+    border-radius: 999px;
+    width: 50%;
+    height: 50%;
+}

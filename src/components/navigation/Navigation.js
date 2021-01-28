@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { elastic as Menu } from 'react-burger-menu';
 
+import Weather from "../weather/Weather";
+
 import './Navigation.css';
 
 class Navigation extends Component {
@@ -22,6 +24,7 @@ class Navigation extends Component {
                     <p>contact@emma.com</p>
                     <p><a href="https://github.com/EmmaFranzen">Github</a></p>
                 </div>
+                <Weather></Weather>
             </Menu>
          );
     }
