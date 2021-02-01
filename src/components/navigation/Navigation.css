@@ -9,7 +9,7 @@
   
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: #373a47;
+    background: #ffa580;
   }
   
   /* Color/shape of burger icon bars on hover*/
@@ -39,7 +39,7 @@
   
   /* General sidebar styles */
   .bm-menu {
-    background: #373a47;
+    background: #ffa580;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
     width: 100%;
@@ -47,7 +47,7 @@
   
   /* Morph shape necessary with bubble or elastic */
   .bm-morph-shape {
-    fill: #373a47;
+    fill: #ffa580;
   }
   
   /* Wrapper for item list */
@@ -75,6 +75,7 @@
   .nav-contact-info {
     vertical-align: bottom;
     margin-top: 50vh;
+    color: #fff;
   }
 
   .nav-contact-info p {

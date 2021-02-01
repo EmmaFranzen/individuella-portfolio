@@ -5,3 +5,9 @@
 .header-image {
     max-width: 100%;
 }
+
+.Typewriter {
+    padding-top: 55vh;
+    font-size: 52px;
+    color: #ffa580;
+}

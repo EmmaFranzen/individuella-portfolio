@@ -6,18 +6,19 @@ class Weather extends React.Component {
       this.state = {
         error: null,
         isLoaded: false,
-        items: []
+        items: [],
+        main: null
       };
     }
   
     componentDidMount() {
-      fetch("https://covid-api.com/api/reports?region_name=sweden")
+      fetch("https://api.openweathermap.org/data/2.5/weather?id=2673722&units=metric&appid=26edddc28c8b3e1465b164af494c8a59")
         .then(res => res.json())
         .then(
           (result) => {
             this.setState({
               isLoaded: true,
-              items: result.data
+              main: result.main
             });
           },
           // Note: it's important to handle errors here
@@ -33,20 +34,15 @@ class Weather extends React.Component {
     }
   
     render() {
-      const { error, isLoaded, items } = this.state;
+      const { error, isLoaded, main } = this.state;
       if (error) {
         return <div>Error: {error.message}</div>;
       } else if (!isLoaded) {
         return <div>Loading...</div>;
       } else {
         return (
-          <ul>
-            {items.map(item => (
-              <li>
-                {item.deaths} {item.confirmed}
-              </li>
-            ))}
-          </ul>
+          <p>It it currently {main.temp}° in<br></br>Stockholm, Sweden
+          </p>
         );
       }
     }

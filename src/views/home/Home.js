@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import Header from '../../components/header/Header';
 
+import Hero from "../../images/hero-scaled.jpg"
+
 import './Home.css';
 
 class Home extends Component {
@@ -12,7 +14,7 @@ class Home extends Component {
     render() { 
         return ( 
             <div className='homePage'>
-                <Header img="https://www.rd.com/wp-content/uploads/2020/01/isn-t-he-so-cute-scaled.jpg"></Header>
+                <Header img={Hero} height="100" title="Hi, I'm Emma!" title2="Welcome to my portfolio!"></Header>
             </div>
          );
     }

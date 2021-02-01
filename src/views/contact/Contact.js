@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import "./Contact.css";
+
 import ContactForm from "../../components/contact-form/ContactForm";
 
 class Contact extends Component {
@@ -9,8 +11,8 @@ class Contact extends Component {
     }
     render() { 
         return ( 
-            <div>
-                <h1>This is contact!</h1>
+            <div className="contact-page">
+                <h1>Feel free to contact me!</h1>
                 <ContactForm></ContactForm>
             </div>
          );
