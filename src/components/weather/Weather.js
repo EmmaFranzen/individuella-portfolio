@@ -41,7 +41,7 @@ class Weather extends React.Component {
         return <div>Loading...</div>;
       } else {
         return (
-          <p>It it currently {main.temp}° in<br></br>Stockholm, Sweden
+          <p>It it currently {main.temp} °C in<br></br>Stockholm, Sweden
           </p>
         );
       }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from "../../components/header/Header";
+import ShadowBox from "../../hoc/shadowbox/ShadowBox";
 
 class About extends Component {
     constructor(props) {
@@ -11,8 +12,10 @@ class About extends Component {
         return ( 
             <div className="about-page">
                 <Header img=""></Header>
-                <h1>Who am i?</h1>
-                <p>Lorem ipsum</p>
+                <ShadowBox>
+                    <h1>Who am i?</h1>
+                    <p>Lorem ipsum</p>
+                </ShadowBox>
             </div>
          );
     }

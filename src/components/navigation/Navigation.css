@@ -74,8 +74,13 @@
 
   .nav-contact-info {
     vertical-align: bottom;
-    margin-top: 50vh;
+    margin-top: 5rem;
     color: #fff;
+  }
+
+  .nav-contact-info img {
+    margin-top: 0.5rem;
+    margin-right: 0.65rem;
   }
 
   .nav-contact-info p {

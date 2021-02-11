@@ -2,6 +2,7 @@ import './App.css';
 
 import { Switch, Route } from "react-router-dom";
 
+//import PageContainer from "../../hoc/pagecontainer/PageContainer";
 import Navigation from './components/navigation/Navigation';
 import Home from './views/home/Home';
 import Contact from './views/contact/Contact';

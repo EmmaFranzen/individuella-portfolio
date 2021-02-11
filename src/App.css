@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+
+#page-wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

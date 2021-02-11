@@ -10,7 +10,6 @@ class Header extends Component {
         }
     }
     render() { 
-        let style = this.props.img;
         return ( 
             <div className="header-container" style={{height: this.props.height + "vh", backgroundImage: 'url(' + this.props.img + ')'}}>
                 <Typewriter

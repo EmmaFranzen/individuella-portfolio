@@ -1,0 +1,19 @@
+.button-container {
+    top: 70vh;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 980px) {
+    .button-container {
+        top: 80vh;
+    }
+}
+
+.button-container a {
+    margin-left: 5px;
+    margin-right: 5px;
+} 

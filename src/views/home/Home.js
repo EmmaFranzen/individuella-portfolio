@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from '../../components/header/Header';
+import Button from "../../components/button/Button";
 
 import Hero from "../../images/hero-scaled.jpg"
 
@@ -15,6 +16,10 @@ class Home extends Component {
         return ( 
             <div className='homePage'>
                 <Header img={Hero} height="100" title="Hi, I'm Emma!" title2="Welcome to my portfolio!"></Header>
+                <div className="button-container">
+                    <Button text="My work" url="/portfolio"></Button>
+                    <Button text="Contact me" url="/contact"></Button>
+                </div>
             </div>
          );
     }
