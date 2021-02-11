@@ -9,7 +9,8 @@ class PortfolioItem extends Component {
         this.state = {
             portfolioTitle: this.props.title,
             portfolioUrl: this.props.url,
-            portfolioDesc: this.props.description
+            portfolioDesc: this.props.description,
+            portfolioImg: this.props.image
         }
     }
     render() { 
@@ -17,7 +18,7 @@ class PortfolioItem extends Component {
             <ShadowBox>
             <a className="portfolio-item" href={this.state.portfolioUrl}>
                 <div className="portfolio-content">
-                    <img className="portfolio-img" src="https://magcentre.com/wp-content/uploads/2017/06/how-to-create-a-website-feature-image-e1496943224192.jpg"></img>
+                    <img className="portfolio-img" src={this.state.portfolioImg}></img>
                     <h1 className="portfolio-title">{this.state.portfolioTitle}</h1>
                     <p>{this.state.portfolioDesc}</p>
                 </div>

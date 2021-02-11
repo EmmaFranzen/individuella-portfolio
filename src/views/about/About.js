@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from "../../components/header/Header";
 import ShadowBox from "../../hoc/shadowbox/ShadowBox";
+import AboutHeader from "../../images/about.jpg";
 
 class About extends Component {
     constructor(props) {
@@ -11,8 +12,9 @@ class About extends Component {
     render() { 
         return ( 
             <div className="about-page">
-                <Header img=""></Header>
-                <ShadowBox>
+                <Header title="" img={AboutHeader} height="100"></Header>
+                <div style={{marginTop: 45}} ></div>
+                <ShadowBox style>
                     <h1>Who am i?</h1>
                     <p>Lorem ipsum</p>
                 </ShadowBox>

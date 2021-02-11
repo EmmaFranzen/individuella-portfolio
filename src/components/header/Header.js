@@ -11,7 +11,8 @@ class Header extends Component {
     }
     render() { 
         return ( 
-            <div className="header-container" style={{height: this.props.height + "vh", backgroundImage: 'url(' + this.props.img + ')'}}>
+            <div className="header-container" style={{color: "#fff",height: this.props.height + "vh", backgroundImage: 'url(' + this.props.img + ')'}}>
+                {this.props.title != "" && 
                 <Typewriter
                     options={{
                     strings: [this.props.title, this.props.title2],
@@ -19,6 +20,7 @@ class Header extends Component {
                     loop: true,
                     }}
                 />
+                }
             </div>
          );
     }
