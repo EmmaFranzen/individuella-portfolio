@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Weather extends React.Component {
+class Weather extends Component {
     constructor(props) {
       super(props);
       this.state = {

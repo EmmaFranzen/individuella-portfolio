@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import ShadowBox from "../../hoc/shadowbox/ShadowBox";
+
 import "./ContactForm.css";
 
 import { useFormspark } from "@formspark/use-formspark";
@@ -12,7 +14,7 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   return (
-    <div class="contact-me">
+    <ShadowBox>
     <form onSubmit={async (e) => {
         e.preventDefault();
         await submit({ message, name, email })
@@ -31,7 +33,7 @@ const ContactForm = () => {
         /><br></br>
       <button className="contact-button" type="submit" disabled={submitting}>Send</button>
     </form>
-    </div>
+    </ShadowBox>
   );
 };
  

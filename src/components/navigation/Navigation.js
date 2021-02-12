@@ -24,8 +24,8 @@ class Navigation extends Component {
                 <div className="nav-contact-info">
                     <p>Emma Franzén</p>
                     <p>
-                        <a href="https://github.com/EmmaFranzen"><img src={GitHublogo}></img></a>
-                        <a href="mailto:contact@emma.com"><img src={MailLogo}></img></a>
+                        <a href="https://github.com/EmmaFranzen"><img src={GitHublogo} alt="GitHub Logo"></img></a>
+                        <a href="mailto:contact@emma.com"><img src={MailLogo} alt="Email envelope symbol"></img></a>
                     </p>
                     <Weather></Weather>
                 </div>

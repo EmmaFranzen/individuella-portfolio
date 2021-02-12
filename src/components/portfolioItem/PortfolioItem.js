@@ -18,7 +18,7 @@ class PortfolioItem extends Component {
             <ShadowBox>
             <a className="portfolio-item" href={this.state.portfolioUrl}>
                 <div className="portfolio-content">
-                    <img className="portfolio-img" src={this.state.portfolioImg}></img>
+                    <img className="portfolio-img" src={this.state.portfolioImg} alt={this.state.title}></img>
                     <h1 className="portfolio-title">{this.state.portfolioTitle}</h1>
                     <p>{this.state.portfolioDesc}</p>
                 </div>

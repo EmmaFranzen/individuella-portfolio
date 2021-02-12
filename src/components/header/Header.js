@@ -11,8 +11,8 @@ class Header extends Component {
     }
     render() { 
         return ( 
-            <div className="header-container" style={{color: "#fff",height: this.props.height + "vh", backgroundImage: 'url(' + this.props.img + ')'}}>
-                {this.props.title != "" && 
+            <div className="header-container" style={{color: this.props.color, height: this.props.height + "vh", backgroundImage: 'url(' + this.props.img + ')'}}>
+                {this.props.title !== "" && 
                 <Typewriter
                     options={{
                     strings: [this.props.title, this.props.title2],

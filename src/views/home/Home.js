@@ -15,7 +15,7 @@ class Home extends Component {
     render() { 
         return ( 
             <div className='homePage'>
-                <Header img={Hero} height="100" title="Hi, I'm Emma!" title2="Welcome to my portfolio!"></Header>
+                <Header img={Hero} height="100" color="#ffa580" title="Hi, I'm Emma!" title2="Welcome to my portfolio!"></Header>
                 <div className="button-container">
                     <Button text="My work" url="/portfolio"></Button>
                     <Button text="Contact me" url="/contact"></Button>
