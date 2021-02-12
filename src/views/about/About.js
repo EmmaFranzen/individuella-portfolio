@@ -14,7 +14,7 @@ class About extends Component {
     render() { 
         return ( 
             <div className="about-page">
-                <Header title="Who am i?" color="#fff" img={AboutHeader} height="100"></Header>
+                <Header title="Who am I?" color="#fff" img={AboutHeader} height="100"></Header>
                 <div style={{marginTop: 45}} ></div>
                 <ShadowBox style>
                     <h1>Hi you!</h1>

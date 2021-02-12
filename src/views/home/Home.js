@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from '../../components/header/Header';
 import Button from "../../components/button/Button";
+import { Link } from 'react-router-dom';
 
 import Hero from "../../images/hero-scaled.jpg"
 
@@ -17,8 +18,8 @@ class Home extends Component {
             <div className='homePage'>
                 <Header img={Hero} height="100" color="#ffa580" title="Hi, I'm Emma!" title2="Welcome to my portfolio!"></Header>
                 <div className="button-container">
-                    <Button text="My work" url="/portfolio"></Button>
-                    <Button text="Contact me" url="/contact"></Button>
+                    <Link to="/portfolio"><Button text="My work" /*url="/portfolio"*/></Button></Link>
+                    <Link to="/contact"><Button text="Contact me" /*url="/contact"*/></Button></Link>
                 </div>
             </div>
          );

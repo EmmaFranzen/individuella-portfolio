@@ -17,7 +17,7 @@ const ContactForm = () => {
     <ShadowBox>
     <form onSubmit={async (e) => {
         e.preventDefault();
-        await submit({ message, name, email })
+        alert("Thank you for contacting me! I will be in touch with you soon.");
     }}>
         <input name="Email" id="email" type="email" placeholder="Your email"
         value={email}
